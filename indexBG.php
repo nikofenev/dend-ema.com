@@ -1,10 +1,11 @@
-<?php
-    require_once 'languagePicker.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-
+    
+<div class="languagePicker">
+    <a href="index.html"><img src="img/bg.png" widht="30px" height="30px"></a>
+    <a href="indexUS.html"><img src="img/us.png" widht="30px" height="30px"></a>
+</div>
+    
 <head>
 
     <meta charset="utf-8">
