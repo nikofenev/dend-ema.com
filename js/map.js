@@ -18,8 +18,7 @@ function initMap() {
         infowindow.open(map,marker);
     });
     infowindow.open(map,marker);
-<<<<<<< HEAD
 }
-=======
+
 }
->>>>>>> 740b9f997348442cf54a74a19a6a5d5dbadcccf4
+
