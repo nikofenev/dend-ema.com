@@ -1,1 +1,21 @@
-function init_map() {var myOptions = {zoom:17,center:new google.maps.LatLng(41.525439,25.41076069999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.525439,25.41076069999997)});infowindow = new google.maps.InfoWindow({content:'<strong>Модно ателие "ДенД"</strong><br />ул. Гюмюрджинска 54 гр. Момчилград, България<br /><br /><strong>Tailoring Shop "DenD"</strong><br />54 Giumiurdzhinska Momchilgrad,Bulgaria'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+function initMap() {
+    var uluru = {lat: 41.525439, lng: 25.41076069999997};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: uluru
+    });
+    
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+        
+    var infowindow = new google.maps.InfoWindow({
+      content:'<strong>Модно ателие "ДенД"</strong><br /><br />ул. Гюмюрджинска 54 етаж 2, гр. Момчилград, България<br />'
+    });
+        
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map,marker);
+    });
+    infowindow.open(map,marker);
+}
